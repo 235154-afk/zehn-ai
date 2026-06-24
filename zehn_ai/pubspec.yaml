@@ -1,0 +1,73 @@
+name: zehn_ai
+description: ZehnAI — Personal AI Assistant for Pakistani Students
+
+publish_to: 'none'
+version: 1.0.0+1
+
+environment:
+  sdk: '>=3.0.0 <4.0.0'
+
+dependencies:
+  flutter:
+    sdk: flutter
+
+  # HTTP requests to Gemini API
+  http: ^1.2.0
+
+  # Local storage (offline chat history)
+  hive: ^2.2.3
+  hive_flutter: ^1.1.0
+
+  # PDF text extraction (for study mode)
+  pdf_text: ^0.2.0
+
+  # File picker (upload PDFs, documents)
+  file_picker: ^6.1.1
+
+  # Share and export (share resumes, notes)
+  share_plus: ^7.2.1
+
+  # PDF generation (create resume PDFs)
+  pdf: ^3.10.8
+  printing: ^5.12.0
+
+  # Image picker (upload images for AI analysis)
+  image_picker: ^1.0.7
+
+  # Clipboard operations
+  flutter_clipboard_manager: ^0.0.2
+
+  # Internet connectivity check
+  connectivity_plus: ^5.0.2
+
+  # Secure key storage (store API key safely)
+  flutter_secure_storage: ^9.0.0
+
+  # Markdown rendering (render AI responses with formatting)
+  flutter_markdown: ^0.6.18
+
+  # Icons
+  cupertino_icons: ^1.0.6
+
+dev_dependencies:
+  flutter_test:
+    sdk: flutter
+  flutter_lints: ^3.0.0
+  hive_generator: ^2.0.1
+  build_runner: ^2.4.8
+
+flutter:
+  uses-material-design: true
+  assets:
+    - assets/images/
+
+  fonts:
+    - family: Inter
+      fonts:
+        - asset: assets/fonts/Inter-Regular.ttf
+        - asset: assets/fonts/Inter-Medium.ttf
+          weight: 500
+        - asset: assets/fonts/Inter-SemiBold.ttf
+          weight: 600
+        - asset: assets/fonts/Inter-Bold.ttf
+          weight: 700
