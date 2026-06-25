@@ -1,0 +1,33 @@
+name: zehn_ai
+description: ZehnAI — Personal AI Assistant for Pakistani Students
+
+publish_to: 'none'
+version: 1.0.0+1
+
+environment:
+  sdk: '>=3.0.0 <4.0.0'
+
+dependencies:
+  flutter:
+    sdk: flutter
+  http: ^1.2.0
+  hive: ^2.2.3
+  hive_flutter: ^1.1.0
+  file_picker: ^6.1.1
+  share_plus: ^7.2.1
+  pdf: ^3.10.8
+  printing: ^5.12.0
+  image_picker: ^1.0.7
+  clipboard: ^0.1.3
+  connectivity_plus: ^5.0.2
+  flutter_secure_storage: ^9.0.0
+  flutter_markdown: ^0.6.18
+  cupertino_icons: ^1.0.6
+
+dev_dependencies:
+  flutter_test:
+    sdk: flutter
+  flutter_lints: ^3.0.0
+
+flutter:
+  uses-material-design: true
